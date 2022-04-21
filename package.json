@@ -25,13 +25,16 @@
   },
   "husky": {
     "hooks": {
-        "pre-commit": "yarn style",
-        "commit-msg": "validate-commit-msg"
+      "pre-commit": "yarn style",
+      "commit-msg": "validate-commit-msg"
     }
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
