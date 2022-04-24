@@ -1,8 +1,8 @@
 {
   "name": "third-login-ts",
   "version": "1.0.5",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": "https://gitee.com/javanx/third-login-ts.git",
   "author": "Javan <864479410@qq.com>",
   "license": "MIT",
@@ -24,7 +24,8 @@
     "style:prettier": "prettier --write \"src/**/*.ts\"",
     "style:lint": "tslint -p tsconfig.json -c tslint.json",
     "build": "tsc",
-    "publish": "npm version patch && npm publish"
+    "patch": "npm version patch",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "@types/node": "^17.0.25",
