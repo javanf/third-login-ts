@@ -5,15 +5,17 @@
  * @Last Modified time: 2022-04-Th 03:51:03 
  */
 const git = require('./github/index')
-const sina = require('./github/index')
-const qq = require('./github/index')
+const sina = require('./sina/index')
+const qq = require('./qq/index')
+const gitee = require('./gitee/index')
+const oschina = require('./oschina/index')
 
 
 module.exports = {
   git,
   sina,
-  qq
+  qq,
+  gitee,
+  oschina
 }
-
-console.log('Hello TypeScript!');
 

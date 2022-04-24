@@ -1,10 +1,23 @@
 {
   "name": "third-login-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://gitee.com/javanx/third-login-ts.git",
   "author": "Javan <864479410@qq.com>",
   "license": "MIT",
+  "keywords": [
+    "express",
+    "node",
+    "third",
+    "login",
+    "github",
+    "sina",
+    "qq",
+    "ts",
+    "typescript"
+  ],
+  "description": "node后台第三方登录插件，支持github、qq、sina、gitee、开源中国",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/index.ts",
     "style": "run-s style:**",
@@ -35,6 +48,7 @@
     }
   },
   "dependencies": {
+    "redis": "^4.0.6",
     "request": "^2.88.2"
   }
 }

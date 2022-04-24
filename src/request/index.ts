@@ -15,6 +15,7 @@ module.exports = {
    */
    requestHttp(options: Object) : Promise <Object> {
     return new Promise((resolve, reject)=>{
+      console.log(options)
       request(options, (err: any, httpResponse: any, body: any) => {
         if(err) {
           return reject(err)

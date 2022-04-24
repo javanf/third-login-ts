@@ -1,4 +1,4 @@
-> `node` 服务端第三方登录，包括`github`、`qq`、`sina`。
+> `node` 服务端第三方登录，包括`github`、`qq`、`sina`、`gitee`、开源中国。
 
 ## 安装插件
 ```bash
@@ -74,3 +74,5 @@ router.get('/qq/login/callback', async (req, res) => {
   let userinfo = await qq.callback()
 })
 ```
+
+其他示例同上，`gitee`、开源中国已解决`token`刷新问题，用户信息都会在`callback`返回，且`token`一并返回

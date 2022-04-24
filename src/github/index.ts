@@ -26,13 +26,18 @@ class github {
   }
 
   /**
-   * 登录跳转到git授权，拿回code，并调用回调
+   * 登录跳转到github授权，拿回code，并调用回调
    */
   login(res: Object) {
     console.log('github login')
     let path = `${this.authorizeApi}?client_id=${this.option.appId}`
     res.redirect(path)
   }
+  /**
+   * 回调
+   * @param code 回调返回的code
+   * @returns 返回登录成功的用户信息
+   */
   async callback(code: String){
     let params = {
       client_id: this.option.appId,
@@ -56,6 +61,9 @@ class github {
       }
     })
     body = JSON.parse(body)
+
+    body.access_token = access_token
+
     return body
   }
 }
