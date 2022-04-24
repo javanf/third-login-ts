@@ -3,3 +3,4 @@ node_modules/
 .vcmrc
 tslint.json
 tsconfig.json
+src/
