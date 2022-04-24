@@ -41,6 +41,10 @@ node_modules/
 # TypeScript v1 declaration files
 typings/
 
+*.js
+*.d.ts
+*.js.map
+
 # Optional npm cache directory
 .npm
 
