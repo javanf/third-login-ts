@@ -1,1 +1,5 @@
 node_modules/
+.prettierrc.js
+.vcmrc
+tslint.json
+tsconfig.json

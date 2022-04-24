@@ -1,9 +1,8 @@
 {
   "name": "third-login-ts",
-  "version": "1.0.7",
-  "main": "./index.js",
-  "types": "./index.d.ts",
-  "typings": "./index.d.ts",
+  "version": "1.0.5",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://gitee.com/javanx/third-login-ts.git",
   "author": "Javan <864479410@qq.com>",
   "license": "MIT",
