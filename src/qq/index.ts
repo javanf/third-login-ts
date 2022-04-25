@@ -73,6 +73,7 @@ class qq {
 
     body = JSON.parse(body);
 
+    body.qqOpenid = qqOpenid
     body.access_token = access_token
 
     return body

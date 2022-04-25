@@ -76,3 +76,6 @@ router.get('/qq/login/callback', async (req, res) => {
 ```
 
 其他示例同上，`gitee`、开源中国已解决`token`刷新问题，用户信息都会在`callback`返回，且`token`一并返回
+
+## 演示地址
+[https://www.webxiu.com.cn](https://www.webxiu.com.cn)
