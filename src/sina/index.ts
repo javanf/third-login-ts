@@ -36,7 +36,7 @@ class sina {
   /**
    * 登录跳转到sina授权，拿回code，并调用回调
    */
-  login(res: Object) {
+  login(res: any) {
     console.log('sina login')
     let path = `${this.authorizeApi}?client_id=${this.option.appId}&response_type=code&redirect_uri=${this.option.redirectUrl}`
     res.redirect(path)

@@ -42,7 +42,7 @@ class oschina {
   /**
    * 登录跳转到oschina授权，拿回code，并调用回调
    */
-  login(res: Object) {
+  login(res: any) {
     console.log('oschina login');
     let path = `${this.authorizeApi}?response_type=code&client_id=${this.option.appId}&state=xyz&redirect_uri=${this.option.redirectUrl}`
     res.redirect(path);

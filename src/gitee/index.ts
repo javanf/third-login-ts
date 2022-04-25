@@ -42,7 +42,7 @@ class gitee {
   /**
    * 登录跳转到gitee授权，拿回code，并调用回调
    */
-  login(res: Object) {
+  login(res: any) {
     console.log('gitee login');
     let path = `${this.authorizeApi}?client_id=${this.option.appId}&redirect_uri=${this.option.redirectUrl}&response_type=code`
     res.redirect(path);

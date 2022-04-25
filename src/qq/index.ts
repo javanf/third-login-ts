@@ -30,7 +30,7 @@ class qq {
   /**
    * 登录跳转到qq授权，拿回code，并调用回调
    */
-  login(res: Object) {
+  login(res: any) {
     console.log('qq login')
     let path = `${this.authorizeApi}?response_type=code&client_id=${this.option.appId}&redirect_uri=${this.option.redirectUrl}&state=233&scope=get_user_info,get_vip_info,get_vip_rich_info`
     res.redirect(path)

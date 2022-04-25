@@ -28,7 +28,7 @@ class github {
   /**
    * 登录跳转到github授权，拿回code，并调用回调
    */
-  login(res: Object) {
+  login(res: any) {
     console.log('github login')
     let path = `${this.authorizeApi}?client_id=${this.option.appId}`
     res.redirect(path)
